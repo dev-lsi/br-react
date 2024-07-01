@@ -41,3 +41,19 @@
 .link-component{
   color:#8de1f8;
 }
+
+.search{
+  position: fixed;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: burlywood;
+  /* Use the environment variable for the left anchoring with a fallback. */
+  left: env(titlebar-area-x, 0);
+  /* Use the environment variable for the top anchoring with a fallback. */
+  top: env(titlebar-area-y, 0);
+  /* Use the environment variable for setting the width with a fallback. */
+  width: env(titlebar-area-width, 100%);
+  /* Use the environment variable for setting the height with a fallback. */
+  height: env(titlebar-area-height, 33px);
+}
