@@ -1,59 +1,7 @@
+@import './typography.css';
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #8de1f8;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.link-component{
-  color:#8de1f8;
-}
-
-.search{
-  position: fixed;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: burlywood;
-  /* Use the environment variable for the left anchoring with a fallback. */
-  left: env(titlebar-area-x, 0);
-  /* Use the environment variable for the top anchoring with a fallback. */
-  top: env(titlebar-area-y, 0);
-  /* Use the environment variable for setting the width with a fallback. */
-  width: env(titlebar-area-width, 100%);
-  /* Use the environment variable for setting the height with a fallback. */
-  height: env(titlebar-area-height, 33px);
 }

@@ -1,0 +1,154 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12em;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-inline: 2em;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 1, 12, 1) 0%,
+    rgba(1, 1, 12, 1) 20%,
+    rgba(1, 1, 12, 0) 100%
+  );
+}
+
+.header-nav{
+  position: relative;
+  border:1px solid red;
+}
+
+.header-nav-ul {
+  display: flex;
+  list-style: none;
+  column-gap: 1.4em;
+  font-size: 1.4em;
+}
+
+.logo-container{
+  position: relative;
+  flex-basis: 20%;
+  background-color: var(--link-text-color);
+  border-top-right-radius: 1em;
+  height: 3em;
+}
+
+.logo-container:hover,
+.login-button-container:hover {
+  opacity: 0.8;
+}
+
+.logo-container:active,
+.login-button-container:active {
+  opacity: 0.5;
+}
+
+.app-logo {
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+}
+
+.app-logo2 {
+  border-radius: 0 1em 0 1em;
+  height: 100%;
+  pointer-events: none;
+}
+
+.login-button-container {
+  flex-basis: 20%;
+  position: relative;
+  border-top-right-radius: 1em;
+  height: 3em;
+}
+
+.login-button {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.4em;
+  background-color: var(--link-text-color);
+  border-bottom-left-radius: 1em;
+  color: rgb(201, 0, 0);
+  font-style: italic;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.login-button span {
+  color: dimgray;
+}
+
+.burger-menu-button {
+  display: none;
+  flex-shrink: 0;
+}
+.menu-li {
+  display: block;
+}
+
+/* .user-info-div{
+
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 900px) {
+  .burger-menu-button {
+    display: block;
+  }
+  /* .menu-li {
+    display: none;
+  } */
+  .header-nav-ul {
+    z-index: 999;
+    position: absolute;
+    top:1em;
+    left:-2em;
+    background-color: var(--bkg1-dark-theme-blue);
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2.6em;
+    display:none;
+    border-style: solid;
+    padding-inline: 1em;
+  }
+
+  .logo-container {
+  }
+
+  .login-button-container {
+  }
+
+  .login-button {
+    padding-inline: 0.2em;
+  }
+}
+
+.hidden{
+  display:none;
+}
+
+.visible{
+  display: flex;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

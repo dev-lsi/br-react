@@ -1,0 +1,8 @@
+
+.main{
+    background-color:var(--bkg2);
+    min-height: 200vh;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    padding-inline: 2em;
+}

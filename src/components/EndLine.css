@@ -1,0 +1,32 @@
+.endline-container {
+  position: relative;
+  height: 2em;
+  background-color: var(--bkg1);
+  text-align: center;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.endline-container p {
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0px;
+  margin-block: 0;
+  animation: slideAnimation 60s linear infinite;
+  font-family: Roboto, sans-serif;
+  font-size: 0.8em;
+  margin-top: 0.8em;
+  color: var(--link-text-color);
+  overflow: hidden;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(280%);
+  }
+}
+
+

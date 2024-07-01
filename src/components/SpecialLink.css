@@ -1,0 +1,36 @@
+.special-link{
+    position: relative;
+    flex-basis: 20%;
+    margin-inline:2em;
+}
+
+.special-link img{
+    width: 14vw;
+    animation: link-rotate 60s linear infinite;
+}
+
+.link-itself{
+    z-index: 1;
+    position: absolute;
+    top:40%;
+    left:20%;
+    color:var(--link-text-color);
+    background-color: var(--bkg1);
+    font-size: 2em;
+}
+
+.special-link a:hover{
+    color: var(--link-hover-color);
+}
+
+@keyframes link-rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
