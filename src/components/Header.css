@@ -23,7 +23,7 @@
 
 .header-nav{
   position: relative;
-  border:1px solid red;
+  border:1px solid rgb(7, 0, 34);
 }
 
 .header-nav-ul {
@@ -32,6 +32,41 @@
   column-gap: 1.4em;
   font-size: 1.4em;
 }
+
+.menu-button-li{
+  text-align: center;
+  display:none;
+}
+
+
+
+@media (max-width:900px) {
+ 
+  .header-nav-ul{ 
+   
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(9, 9, 9, 0.8);
+  }
+
+  .option-li {
+    
+    font-size: 1.2em;
+  }
+  
+  .menu-button-li{
+    display:block;
+    
+  }
+}
+.opened{
+  display:none;
+}
+
+.closed{
+  display:block;
+}
+
 
 .logo-container{
   position: relative;
@@ -86,63 +121,12 @@
   color: dimgray;
 }
 
-.burger-menu-button {
-  display: none;
-  flex-shrink: 0;
-}
-.menu-li {
-  display: block;
-}
-
-/* .user-info-div{
-
-} */
 
 @media (prefers-reduced-motion: no-preference) {
   .app-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-@media (max-width: 900px) {
-  .burger-menu-button {
-    display: block;
-  }
-  /* .menu-li {
-    display: none;
-  } */
-  .header-nav-ul {
-    z-index: 999;
-    position: absolute;
-    top:1em;
-    left:-2em;
-    background-color: var(--bkg1-dark-theme-blue);
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 2.6em;
-    display:none;
-    border-style: solid;
-    padding-inline: 1em;
-  }
-
-  .logo-container {
-  }
-
-  .login-button-container {
-  }
-
-  .login-button {
-    padding-inline: 0.2em;
-  }
-}
-
-.hidden{
-  display:none;
-}
-
-.visible{
-  display: flex;
-}
+} 
 
 @keyframes App-logo-spin {
   from {
